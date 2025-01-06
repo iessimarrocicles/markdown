@@ -14,7 +14,7 @@ Este método permite añadir formatos como **negritas**, *cursivas* o enlaces, u
 
 Observa la diferencia entre la sintaxis Markdown (izquierda) y la sintaxis HTML (derecha). ¿Con cuál te quedas? 
 
-![Diferencia MarkDown vs HTML](/img/diferencia_markdown_html.jpg)
+![Diferencia MarkDown vs HTML](./../img/diferencia_markdown_html.jpg)
 
 Para conseguir esto, necesitarás conocer la sintaxis Markdown.
 

@@ -12,10 +12,11 @@ dev_addr: localhost:4000
 
 # Navegació dels documents
 nav:
+- Inicio: index.md
 - Markdown:
   - Introducción: markdown/introduccion.md
   - Editores: markdown/editores.md
-  - Sintaxis básica: markdown/sintaxis.md
+  - Sintaxis básica: markdown/sintaxis2.md
 - MkDocs:
   - Introducción: mkdocs/introduccion.md
   - Configuración: mkdocs/configuracion.md
@@ -48,7 +49,6 @@ theme:
     - content.code.copy 
     - content.code.select
     - content.code.annotate
-    - navigation.footer       # footer de la pagina, amb navegació
     - navigation.top    # boto flotant de tornar a dalt 
 
 extra_css:

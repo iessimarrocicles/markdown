@@ -51,7 +51,7 @@ Al abrirlo por primera vez, se te pedirá que elijas entre un tema claro o uno o
 
 La interfaz principal de VS Code se ve aproximadamente así:
 
-![Interfaz de VS Code](/img/interfazVSCode.png)
+![Interfaz de VS Code](./../img/interfazVSCode.png)
 
 ### Elementos principales de la interfaz:
 - **Barra de actividades**: Ubicada a la izquierda, contiene cinco actividades principales:
@@ -67,7 +67,7 @@ La interfaz principal de VS Code se ve aproximadamente así:
 
 En versiones recientes, al abrir una carpeta nueva, el editor puede pedir que confirmes si confías en la fuente del código dentro de esa carpeta.
 
-![Interfaz de VS Code](/img/interfazVSCode2.png)
+![Interfaz de VS Code](./../img/interfazVSCode2.png)
 
 Para más detalles sobre la interfaz de VS Code, puedes consultar:
 
@@ -76,14 +76,14 @@ Para más detalles sobre la interfaz de VS Code, puedes consultar:
 ## Trabajando con VS Code y Markdown
 Con VS Code puedes editar archivos directamente, pero lo más útil es abrir una carpeta completa para trabajar con todos los archivos que contiene.
 
-![Interfaz de VS Code](/img/interfazVSCode3.png)
+![Interfaz de VS Code](./../img/interfazVSCode3.png)
 
 1. Haz clic en el botón **Open Folder** del explorador de archivos.
 2. Selecciona una carpeta. Por ejemplo, una llamada `DocumentosMarkdown`.
 
 La estructura de la carpeta se mostrará como un árbol en el explorador de archivos, con todas las carpetas y archivos dentro. Por ejemplo, podrías ver una carpeta principal con subcarpetas como `Unidad 1` y `Unidad 2`.
 
-![Interfaz de VS Code](/img/interfazVSCode4.png)
+![Interfaz de VS Code](./../img/interfazVSCode4.png)
 
 Al lado del nombre de la carpeta principal, encontrarás cuatro iconos:
 
@@ -104,7 +104,7 @@ Una vez creado un archivo, puedes empezar a escribir directamente. En la parte s
 - Mostrar el texto que escribes en la parte izquierda.
 - Ver una previsualización en tiempo real en la parte derecha.
 
-![Interfaz de VS Code](/img/interfazVSCode5.png)
+![Interfaz de VS Code](./../img/interfazVSCode5.png)
 
 Para cerrar la vista previa, haz clic en la **x** junto al nombre del archivo en la previsualización.
 
@@ -121,6 +121,6 @@ Para instalar una extensión:
 
 - Haz clic en el botón **Install** que aparece junto a la descripción de la extensión.
 
-![Interfaz de VS Code](/img/interfazVSCode6.png)
+![Interfaz de VS Code](./../img/interfazVSCode6.png)
 
 ¡Explora estas herramientas y saca el máximo partido a VS Code trabajando con Markdown!
