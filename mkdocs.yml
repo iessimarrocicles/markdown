@@ -1,0 +1,59 @@
+# Nom del lloc
+site_name: PROYECTO INTERMODULAR
+
+# Carpeta amb el documents font
+docs_dir: 'md'
+
+# Carpeta on es generarà el lloc web (mkdocs build)
+site_dir: 'docs'
+
+# Adreça on s'executa el server local (mkdocs serve)
+dev_addr: localhost:4000
+
+# Navegació dels documents
+nav:
+- Markdown:
+  - Introducción: markdown/introduccion.md
+  - Editores: markdown/editores.md
+  - Sintaxis básica: markdown/sintaxis.md
+- MkDocs:
+  - Introducción: mkdocs/introduccion.md
+  - Configuración: mkdocs/configuracion.md
+  - Alojamiento en GitHub: mkdocs/github.md
+
+# Extenions
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - attr_list
+  - md_in_html
+
+# Tema a triar
+theme: 
+  name: material   # selecció del tema - mkdocs o readthedocs / material (pip install mkdocs-material)
+  highlightjs: true
+  palette:
+   # Boto que canvia a mode oscur
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Botó que canvia a mode clar
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # utilitats de copia de codi
+    - content.code.copy 
+    - content.code.select
+    - content.code.annotate
+    - navigation.footer       # footer de la pagina, amb navegació
+    - navigation.top    # boto flotant de tornar a dalt 
+
+extra_css:
+  - css/extra.css
+
+# Altres afegits
+plugins:
+  - search      # plugin del quadre cerca
