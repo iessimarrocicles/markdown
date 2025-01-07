@@ -14,7 +14,9 @@ Este método permite añadir formatos como **negritas**, *cursivas* o enlaces, u
 
 Observa la diferencia entre la sintaxis Markdown (izquierda) y la sintaxis HTML (derecha). ¿Con cuál te quedas? 
 
-![Diferencia MarkDown vs HTML](./../img/diferencia_markdown_html.jpg)
+<figure markdown="span">
+  ![Diferencia MarkDown vs HTML](./../img/diferencia_markdown_html.jpg)
+</figure>
 
 Para conseguir esto, necesitarás conocer la sintaxis Markdown.
 
@@ -44,37 +46,3 @@ Por ejemplo, observa la diferencia entre un archivo creado con un procesador de 
 Si en el futuro herramientas como Microsoft Word desapareciesen, podrías perder acceso a todo el contenido creado durante años. Para evitar esto, lo más inteligente es generar tu contenido de manera sencilla: utilizando texto plano.
 
 El único inconveniente del texto plano es que no permite aplicar formato (negritas, cursivas, enlaces, etc.), a menos que utilices **Markdown**.
-
-
-```markdown
-!!!note "Anotació"
-    Esta part si que la podeu provar a casa.
-
-!!!warning "Compte!"
-    Aneu amb compte al realitzar esta part.
-
-!!!danger "Perill!!"
-    No proveu açò a casa.
-```
-
-!!!note "Anotació"
-    Esta part si que la podeu provar a casa.
-
-!!!warning "Compte!"
-    Aneu amb compte al realitzar esta part.
-
-!!!danger "Perill!!"
-    No proveu açò a casa.
-
-``` sh
-mkdocs build
-```
-
-```sh
-echo "Hola, mundo111"
-```
-
-
-```python
-print("Hola, mundo")
-```

@@ -14,7 +14,7 @@ Si el que deseamos, por otro lado es añadir solo un salto de línea en mitad de
 
 Vemos-lo con algún ejemplo:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 Este es el primer párrafo, como veis, necesita dos saltos de línea, o el que sería el mismo, una línea en blanco después del párrafo.
 
 Este es otro paràgrar,   
@@ -29,7 +29,7 @@ Hay varias formas de marcar cabeceras:
 
 * Utilizando al menos un símbolo `=`o `-` después del texto para indicar cabeceras de primero y segundo nivel:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 Esto sería una cabecera de primer nivel
 ========================================
 
@@ -41,7 +41,7 @@ Recordáis que solo hace falta uno = o uno -, aunque se  pueden utilizar más, c
 
 * Utilizando el *Estilo ATX**, al cual, utilizamos el símbolo `#` antes del texto para indicar el nivel de la cabecera. Se admiten hasta seis niveles de profundidad (`######`), el que vendría a ser del `h1` hasta el `h6` de #HTML.
 
-```markdown
+```markdown linenums="1" title="Markdown"
 
 # Cabecera de primer nivel
 
@@ -68,7 +68,7 @@ Cuando se genera un documento, ya sea PDF, #HTML u otro formato a partir de un d
 
 Vemos-lo con un ejemplo. Dada, por ejemplo la primera cabecera de este documento:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 # Introducción: El arte de escribir ante un ordenador
 ```
 
@@ -76,7 +76,7 @@ El identificador que se genera es: `id="introducción-lart-describir-ante-un-ord
 
 Esta cabecera, la podriem haber escrito también de la siguiente forma:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 # Introducción: El arte de escribir ante un ordenador { #introduccio }
 ```
 
@@ -88,7 +88,7 @@ Markdown nos permite hacer uso del símbolo del asterisco como marca de formato 
 
 Vemos-lo con ejemplos:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 Con un asterisco marcamos un texto en cursiva
 Con dos asteriscos marcamos un *texto en negrita** 
 Con tres asteriscos marqiem un **texto en cursiva y negrita**
@@ -96,20 +96,25 @@ Con tres asteriscos marqiem un **texto en cursiva y negrita**
 En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*
 ```
 
-Resultado:
-
 Con un asterisco marcamos un texto en cursiva*  
 Con dos asteriscos marcamos un *texto en negrita**   
 Con tres asteriscos marqiem un **texto en cursiva y negrita**
 
 En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*
 
+!!! note "Resultado"
+    Con un asterisco marcamos un texto en cursiva*  
+    Con dos asteriscos marcamos un *texto en negrita**   
+    Con tres asteriscos marqiem un **texto en cursiva y negrita**
+
+    En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*
+
 
 ## Líneas horizontales
 
 Una línea horizontal se define mediante tres o más símbolos ``, `-` o `_`, separados o no por espacios:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 - - -
 
 * * 
@@ -134,7 +139,7 @@ Markdown permite hacer uso tanto de listas ordenadas como listas no ordenadas.
 
 Las listas no ordenadas se marcan haciendo uso de los símbolos ``, `+` o `-` a primeros de cada elemento, e incluyendo cada ítem en una línea diferente (y no hacen falta dos saltos de línea).
 
-```markdown
+```markdown linenums="1" title="Markdown"
 * Elemento 1
 * Elemento 2
 ...
@@ -157,7 +162,7 @@ Por ejemplo:
 
 Una lista puede contener dentro de otras listas. En este caso, podamos o no incluir una línea en blanco delante. Para utilizar una lista dentro de otra solo tendremos que sangrar* la lista que está dentro de la otra por aliniar-la con el primer carácter de texto del elemento que la contiene. Podemos tener tantas listas dentro de otras como volguem.
 
-```markdown
+```markdown linenums="1" title="Markdown"
 * Elemento 1
   * subelemento 1.1
     * subelemento 1.1.1
@@ -169,7 +174,7 @@ Una lista puede contener dentro de otras listas. En este caso, podamos o no incl
 
 En estos casos, como que podemos utilizar varios símbolos para indicar listas, se suele utilizar un elemento por cada nivel de la lista, con el fin de facilitar la lectura del texto plano:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 * Elemento 1
   + subelemento 1.1
     - subelemento 1.1.1
@@ -195,7 +200,7 @@ El funcionamiento de las listas ordenadas es el mismo que las no ordenadas, salv
 
 En la versión estándar de Markdown los elementos que indican la orden tienen que ser *números decimales seguidos de un punto y un espacio**. En el estándar, *estos números se ignoran**, por el que la lista:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 1. Elemento 1
 2. Elemento 2
 3. Elemento 3
@@ -203,7 +208,7 @@ En la versión estándar de Markdown los elementos que indican la orden tienen q
 
 Será la misma que:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 4. Elemento 1
 5. Elemento 2
 6. Elemento 3
@@ -215,7 +220,7 @@ En primer lugar, además de números, permite marcar los elementos de una lista 
 
 Por ejemplo:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 (A) Elemento 1
 (B) Elemento 2
 
@@ -228,21 +233,21 @@ II.  Elemento 2, con dos espacios mínimos después del punto
 
 Por otro lado, con Pandoc también podemutilitzar el símbolo `#` como marcador de lista ordenada, de forma que el sistema poso automáticamente la numeración. Así el código:
 
-```markdonw
+```markdown linenums="1" title="Markdown"
 #. elemento 1
 #. elemento 2
 ```
 
 Generaría la lista:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 1. elemento 1
 2. elemento 2
 ```
 
 Otra extensión del Markdown de Pandoc respecto al Markdown original es que conserva la numeración a partir del número inicial. Por ejemplo, si indicamos por error:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 5. Elemento 5
 7. Elemento 6
 8. Elemento 7
@@ -250,7 +255,7 @@ Otra extensión del Markdown de Pandoc respecto al Markdown original es que cons
 
 La salida será la siguiente, donde se corrige este error en la numeración.
 
-```markdown
+```markdown linenums="1" title="Markdown"
 5. Elemento 5
 6. Elemento 6
 7. Elemento 7
@@ -263,7 +268,7 @@ Una extensión más que añade la versión de Pandoc al estándar es la posibili
 Para utilizar este tipo de listas utilizamos el guion como marcador de lista seguido de un espacio y las secuencias de caracteres `[ ]`y `[x]` para indicar un elemento de lista no marcado y marcado respectivamente. Por ejemplo:
 
 
-```markdown
+```markdown linenums="1" title="Markdown"
 - [ ] Elemento de lista como tarea sin marcar
 - [x] Elemento de lista como tarea marcada.
 ```
@@ -285,7 +290,7 @@ La sintaxis para crear tablas del Markdown de Github es una de los más tendidos
 
 Las tablas, en este formato tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 | Cabecera 1 | Cabecera 2 |
 |-------------|-------------|
 | Valor 1     | Valor 2     |
@@ -314,7 +319,7 @@ Además, podemos aliniar el texto a la izquierda, a la derecha o en el centro de
 
 Vemos-lo con un ejemplo. La siguiente definición de tabla:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 | Texto a la izquierda | Texto centrado | Texto a la derecha |
 |        :---       |     :---:    |      ---:       |
 | xxx               | xxx          | xxx             |
@@ -338,7 +343,7 @@ Markdown tiene un amplio uso en la documentación técnica de proyectos informá
 
 Cuando se trata de fragmentos de código que tienen que ir en la misma línea que el texto, por ejemplo si queremos indicar un hashtag #HTML, lo hacemos, \`de este modo\`, haciendo uso de un único carácter de acento, mientras que si el que volamos es escribir un bloque de código, utilizaríamos tres símbolos de acento abierto \`\`\`. Además, detrás los primeros símbolos, podemos especificar de qué lenguaje se trata. Por ejemplo, para indicar el código #HTML de una página web, haríamos:
 
-    ```html
+    ```html linenums="1" title="HTML"
       <html>
           <body>
             <h1>Título de la página web</h1>
@@ -347,7 +352,7 @@ Cuando se trata de fragmentos de código que tienen que ir en la misma línea qu
         </html>
     ```
 Que ente generaría:
-```html
+```html linenums="1" title="HTML"
    <html>
        <body>
          <h1>Título de la página web</h1>
@@ -366,7 +371,7 @@ Vemos algunos ejemplos:
 
 *Ejemplo 1**:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 >
 > Un documento con formato Markdown tendría que ser publicable tal cual, como texto plano, sin que parezco que se ha marcado con hashtags o instrucciones de formato.
 >
@@ -383,7 +388,7 @@ Genera el siguiente:
 
 *Ejemplo 2*
 
-```markdown
+```markdown linenums="1" title="Markdown"
 >
 > # Título de la cita
 >
@@ -400,7 +405,7 @@ Genera:
 
 Además, podemos añadir citas dentro de otras. Con:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 >
 > Párrafo de la cita.
 >
@@ -418,7 +423,7 @@ Generamos el siguiente:
 
 Por otro lado, podemos especificar las citas de forma perezosa*, afeging solo el carácter `>` en la primera línea de cada bloque:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 > Esta es una cita, dentro de un
 paràgragraf de dos líneas.
 ```
@@ -431,13 +436,13 @@ Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer
 
 El formato general para añadir un enlace es el siguiente:
 
-```
+```markdown linenums="1" title="Markdown"
 [Texto del enlace](#URL_o_dirección_relativa)
 ```
 
 Por ejemplo, para añadir un enlace a un sitio web, escribiremos:
 
-```
+```markdown linenums="1" title="Markdown"
 Aci añadimos un [enlace en la web del cefire](http://cefire.edu.gva.es/)
 ```
 
@@ -447,31 +452,31 @@ Aci añadimos un [enlace en la web del cefire](http://cefire.edu.gva.es/)
 
 Para añadir un enlace a una seccíó de nuestro documento, haremos uso del identificador que se asigna automáticamente, o bien que le hemos asignado nosotros. Por ejemplo, si para el apartado introductorio añadimos un identificador de la siguiente forma:
 
-```markdown
-# Introducción: El arte de escribir ante un ordenador {#introduccio}
+```markdown linenums="1" title="Markdown"
+# Introducción: El arte de escribir ante un ordenador {#introduccion}
 ```
 
 Podemos hacer referencia a él de la manera siguiente:
 
-```markdown
-Feudo click [en el siguiente enlace](#introduccio) para volver a la sección de Introducción.
+```markdown linenums="1" title="Markdown"
+Feudo click [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
 ```
 Que generaría:
 
-Haced click [en el siguiente enlace](#introduccio) para volver a la sección de Introducción.
+Haced click [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
 
 
 ## Imágenes
 
 La sintaxis para añadir una imagen es parecida a la del enlace, predecida de una exclamación `!`:
 
-```
+```markdown linenums="1" title="Markdown"
 ![Texto alternativo o pie de la imagen](Ubicación de la imagen)
 ```
 
 Al igual que los enlaces, la ubicación puede ser una dirección de Internet o bien la ruta a un fichero local a nuestro ordenador:
 
-```
+```markdown linenums="1" title="Markdown"
 ![Logotipo de Markdown a la Wikipèdia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png)
 
 ![Logotipo de Markdown a en una ruta relativa](./../img/logoMarkdown.png)
@@ -489,7 +494,7 @@ Si no se indica nada, el tamany se entiende que se especifica en píxeles, pero 
 
 Vemos algunos ejemplos:
 
-```markdown
+```markdown linenums="1" title="Markdown"
 ![Imagen 1 - 10cm](./../img/logoMarkdown.png){ width=10cm }
 
 ![Imagen 2 - 50mm](./../img/logoMarkdown.png){ width=50mm }
@@ -498,12 +503,13 @@ Vemos algunos ejemplos:
 ```
 
 Que generan el siguiente:
+!!! note "Resultado"
 
-![Imagen 1 - 10cm](./../img/logoMarkdown.png){ width=10cm }
+    ![Imagen 1 - 10cm](./../img/logoMarkdown.png){ width=10cm }
 
-![Imagen 2 - 50mm](./../img/logoMarkdown.png){ width=50mm }
+    ![Imagen 2 - 50mm](./../img/logoMarkdown.png){ width=50mm }
 
-![Imagen 3 - 50%](./../img/logoMarkdown.png){ width=50% }
+    ![Imagen 3 - 50%](./../img/logoMarkdown.png){ width=50% }
 
 
 ## Referencias y información adicional
