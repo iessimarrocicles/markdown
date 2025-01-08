@@ -16,11 +16,13 @@ nav:
 - Markdown:
   - Introducción: markdown/introduccion.md
   - Editores: markdown/editores.md
-  - Sintaxis básica: markdown/sintaxis2.md
+  - Sintaxis básica: markdown/sintaxis.md
+  - Referencias: markdown/referencias.md
 - MkDocs:
   - Introducción: mkdocs/introduccion.md
   - Configuración: mkdocs/configuracion.md
   - Alojamiento en GitHub: mkdocs/github.md
+  - Referencias: mkdocs/referencias.md
 
 # Extenions
 markdown_extensions:
