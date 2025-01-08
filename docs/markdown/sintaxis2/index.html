@@ -897,40 +897,58 @@
 <p>Si utilizamos solo un salto de línea, se sobreentiende que es el mismo párrafo, y en la hora de generar el documento, lo veremos como tal.</p>
 <p>Si el que deseamos, por otro lado es añadir solo un salto de línea en mitad de un párrafo, añadiremos al menos dos espacios al final de la línea, y uno sí que utilitzrem uno (solo un) salto de línea.</p>
 <p>Vemos-lo con algún ejemplo:</p>
-<pre><code class="language-markdown">Este es el primer párrafo, como veis, necesita dos saltos de línea, o el que sería el mismo, una línea en blanco después del párrafo.
-
-Este es otro paràgrar,   
-en el que hemos forzado saltos de línea,    
-y aunque no se vea, estas líneas  
-acaban con dos o más espacios en blanco.
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Este es el primer párrafo, como veis, necesita dos saltos de línea, o el que sería el mismo, una línea en blanco después del párrafo.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>Este es otro paràgrar,   
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>en el que hemos forzado saltos de línea,    
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>y aunque no se vea, estas líneas  
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>acaban con dos o más espacios en blanco.
+</span></code></pre></div></td></tr></table></div>
 <h2 id="cabeceras">Cabeceras</h2>
 <p>Hay varias formas de marcar cabeceras:</p>
 <ul>
 <li>Utilizando al menos un símbolo <code>=</code>o <code>-</code> después del texto para indicar cabeceras de primero y segundo nivel:</li>
 </ul>
-<pre><code class="language-markdown">Esto sería una cabecera de primer nivel
-========================================
-
-Esto sería una cabecera de segundo nivel
----------------------------------------
-
-Recordáis que solo hace falta uno = o uno -, aunque se  pueden utilizar más, como es el caso de este ejemplo, donde se han utilizado tantos símbolos como longitud tiene el título.
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="gh">Esto sería una cabecera de primer nivel</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="gh">========================================</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="gu">Esto sería una cabecera de segundo nivel</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="gu">---------------------------------------</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>Recordáis que solo hace falta uno = o uno -, aunque se  pueden utilizar más, como es el caso de este ejemplo, donde se han utilizado tantos símbolos como longitud tiene el título.
+</span></code></pre></div></td></tr></table></div>
 <ul>
 <li>Utilizando el <em>Estilo ATX</em>*, al cual, utilizamos el símbolo <code>#</code> antes del texto para indicar el nivel de la cabecera. Se admiten hasta seis niveles de profundidad (<code>######</code>), el que vendría a ser del <code>h1</code> hasta el <code>h6</code> de #HTML.</li>
 </ul>
-<pre><code class="language-markdown">
-# Cabecera de primer nivel
-
-## Cabecera de segundo nivel nivel
-
-### Cabecera de tercer nivel nivel
-
-...
-
-###### Cabecera de nivel 6
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="gh"># Cabecera de primer nivel</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="gu">## Cabecera de segundo nivel nivel</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="gu">### Cabecera de tercer nivel nivel</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>...
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="gu">###### Cabecera de nivel 6</span>
+</span></code></pre></div></td></tr></table></div>
 <blockquote>
 <p><em>A tener con cuenta</em></p>
 <p>La versión estándar de Markdown no requiere de una línea en blanco antes de una cabecera, pero otras versiones, como por ejemplo la de <em>Pandoc</em> sí que la requiere. Sin embargo, aunque el estándar no lo utilizo, conviene añadirla puesto que facilita así la lectura y localización de estas.</p>
@@ -940,35 +958,49 @@ Recordáis que solo hace falta uno = o uno -, aunque se  pueden utilizar más, c
 <h3 id="atributos-a-la-cabecera">Atributos a la cabecera</h3>
 <p>Cuando se genera un documento, ya sea PDF, #HTML u otro formato a partir de un documento en Markdown, a las cabeceras se los asigna un identificador de manera automática, para que se pueda hacer referencia a ellas desde otras partes del documento. Este identificador se obtiene a partir del texto de la cabecera, por el que si esta es larga, el identificador también lo será. La versión de Pandoc, nos permite añadir ciertos atributos a las cabeceras, entre las que se encuentra el identificador. </p>
 <p>Vemos-lo con un ejemplo. Dada, por ejemplo la primera cabecera de este documento:</p>
-<pre><code class="language-markdown"># Introducción: El arte de escribir ante un ordenador
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador</span>
+</span></code></pre></div></td></tr></table></div>
 <p>El identificador que se genera es: <code>id="introducción-lart-describir-ante-un-ordenador"</code>. </p>
 <p>Esta cabecera, la podriem haber escrito también de la siguiente forma:</p>
-<pre><code class="language-markdown"># Introducción: El arte de escribir ante un ordenador { #introduccio }
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador { #introduccio }</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Siente el identificador de la cabecera solo <code>#introduccio</code>, de forma que podemos hacer referencia al apartado mediante este.</p>
 <h2 id="formatacion-de-texto">Formatación de texto</h2>
 <p>Markdown nos permite hacer uso del símbolo del asterisco como marca de formato para indicar textos tanto en cursiva, como en negrita o ambos. Para lo cual haremos uso de ún, dos o tres asteriscos al principio y al final del texto que queremos remarcar. Además, hay que tener en cuenta que no tenemos que añadir ningún espacio entre los asteriscos del principio y la primera palabra y los asteriscos del final y la última.</p>
 <p>Vemos-lo con ejemplos:</p>
-<pre><code class="language-markdown">Con un asterisco marcamos un texto en cursiva
-Con dos asteriscos marcamos un *texto en negrita** 
-Con tres asteriscos marqiem un **texto en cursiva y negrita**
-
-En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*
-</code></pre>
-<p>Resultado:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>Con un asterisco marcamos un texto en cursiva
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>Con dos asteriscos marcamos un <span class="ge">*texto en negrita*</span>* 
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>Con tres asteriscos marqiem un <span class="gs">**texto en cursiva y negrita**</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*
+</span></code></pre></div></td></tr></table></div>
 <p>Con un asterisco marcamos un texto en cursiva<em><br />
 Con dos asteriscos marcamos un </em>texto en negrita<strong> <br />
 Con tres asteriscos marqiem un </strong>texto en cursiva y negrita**</p>
 <p>En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*</p>
+<div class="admonition note">
+<p class="admonition-title">Resultado</p>
+<p>Con un asterisco marcamos un texto en cursiva<em><br />
+Con dos asteriscos marcamos un </em>texto en negrita<strong> <br />
+Con tres asteriscos marqiem un </strong>texto en cursiva y negrita**</p>
+<p>En cambio, si añadimos algún espacio entre medio, ** no se interpretará correctamente*</p>
+</div>
 <h2 id="lineas-horizontales">Líneas horizontales</h2>
 <p>Una línea horizontal se define mediante tres o más símbolos <code>`,</code>-<code>o</code>_`, separados o no por espacios:</p>
-<pre><code class="language-markdown">- - -
-
-* * 
-
-_ _ _
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">-</span><span class="w"> </span>- -
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="k">*</span><span class="w"> </span>* 
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a>_ _ _
+</span></code></pre></div></td></tr></table></div>
 <p>Resultado:</p>
 <hr />
 <ul>
@@ -983,39 +1015,53 @@ _ _ _
 <p>Markdown permite hacer uso tanto de listas ordenadas como listas no ordenadas.</p>
 <h4 id="listas-no-ordenadas">Listas no ordenadas</h4>
 <p>Las listas no ordenadas se marcan haciendo uso de los símbolos <code>`,</code>+<code>o</code>-` a primeros de cada elemento, e incluyendo cada ítem en una línea diferente (y no hacen falta dos saltos de línea).</p>
-<pre><code class="language-markdown">* Elemento 1
-* Elemento 2
-...
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">*</span><span class="w"> </span>Elemento 1
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="k">*</span><span class="w"> </span>Elemento 2
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>...
+</span></code></pre></div></td></tr></table></div>
 <p>Cada elemento de la lista puede contener varios párrafos, y otros contenidos a nivel de bloque. Cuando queremos incluir varios párrafos en un ítem de la lista, el segundo párrafo y posteriora tendrán que ir <em>precedidos por una línea en blanco, y sangrados por aliniar-se con el contenido que no sea el espacio después del marcador de la lista</em>*.</p>
 <p>Por ejemplo:</p>
-<pre><code>* Primer elemento de la lista
-* Segundo elemento de la lista
-
-  Otro párrafo correspondiente al segundo elemento de la lista.
-  No hace falta un espacio en blanco entre el último párrafo y el siguiente elemento,
-  pero lo podemos añadir para facilitar la lectura de la lista.
-
-* Tercer elemento de la lista.
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>* Primer elemento de la lista
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>* Segundo elemento de la lista
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  Otro párrafo correspondiente al segundo elemento de la lista.
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  No hace falta un espacio en blanco entre el último párrafo y el siguiente elemento,
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  pero lo podemos añadir para facilitar la lectura de la lista.
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>* Tercer elemento de la lista.
+</span></code></pre></div>
 <p>Una lista puede contener dentro de otras listas. En este caso, podamos o no incluir una línea en blanco delante. Para utilizar una lista dentro de otra solo tendremos que sangrar* la lista que está dentro de la otra por aliniar-la con el primer carácter de texto del elemento que la contiene. Podemos tener tantas listas dentro de otras como volguem.</p>
-<pre><code class="language-markdown">* Elemento 1
-  * subelemento 1.1
-    * subelemento 1.1.1
-    * subelemento 1.1.2
-  * subelemento 1.2
-  * subelemento 1.3
-* Elemento 2
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">*</span><span class="w"> </span>Elemento 1
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="k">*</span><span class="w"> </span>subelemento 1.1
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>subelemento 1.1.1
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>subelemento 1.1.2
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">  </span><span class="k">*</span><span class="w"> </span>subelemento 1.2
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">  </span><span class="k">*</span><span class="w"> </span>subelemento 1.3
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="k">*</span><span class="w"> </span>Elemento 2
+</span></code></pre></div></td></tr></table></div>
 <p>En estos casos, como que podemos utilizar varios símbolos para indicar listas, se suele utilizar un elemento por cada nivel de la lista, con el fin de facilitar la lectura del texto plano:</p>
-<pre><code class="language-markdown">* Elemento 1
-  + subelemento 1.1
-    - subelemento 1.1.1
-    - subelemento 1.1.2
-  + subelemento 1.2
-  + subelemento 1.3
-* Elemento 2
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span>
+<span class="normal"><a href="#__codelineno-10-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">*</span><span class="w"> </span>Elemento 1
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>  + subelemento 1.1
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>subelemento 1.1.1
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>subelemento 1.1.2
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a>  + subelemento 1.2
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>  + subelemento 1.3
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="k">*</span><span class="w"> </span>Elemento 2
+</span></code></pre></div></td></tr></table></div>
 <p>Resultado:</p>
 <ul>
 <li>Elemento 1</li>
@@ -1031,51 +1077,69 @@ _ _ _
 <h4 id="listas-ordenadas">Listas ordenadas</h4>
 <p>El funcionamiento de las listas ordenadas es el mismo que las no ordenadas, salvo que cada elemento de la lista lleva un número en lugar de una viñeta*.</p>
 <p>En la versión estándar de Markdown los elementos que indican la orden tienen que ser <em>números decimales seguidos de un punto y un espacio</em><em>. En el estándar, </em>estos números se ignoran**, por el que la lista:</p>
-<pre><code class="language-markdown">1. Elemento 1
-2. Elemento 2
-3. Elemento 3
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">1.</span> Elemento 1
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="k">2.</span> Elemento 2
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">3.</span> Elemento 3
+</span></code></pre></div></td></tr></table></div>
 <p>Será la misma que:</p>
-<pre><code class="language-markdown">4. Elemento 1
-5. Elemento 2
-6. Elemento 3
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">4.</span> Elemento 1
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="k">5.</span> Elemento 2
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="k">6.</span> Elemento 3
+</span></code></pre></div></td></tr></table></div>
 <p>El Markdown de Pandoc, añade un par de extensiones a esta forma de utilizar las listas ordenadas.</p>
 <p>En primer lugar, además de números, permite marcar los elementos de una lista ordenada con letras mayúsculas, minúsculas o números romanos. Para lo cual utilizaremos como marcadores de lista la letra entre paréntesis o bien solo con el paréntesis derecho, seguido de al menos un espacio. También podemos utilizar el punto, pero en este caso, añadiendo dos espacios como mínimo detrás el punto en lugar de uno.</p>
 <p>Por ejemplo:</p>
-<pre><code class="language-markdown">(A) Elemento 1
-(B) Elemento 2
-
-A) Elemento 1
-B) Elemento 2
-
-I.  Elemento 1, con dos espacios mínimos después del punto
-II.  Elemento 2, con dos espacios mínimos después del punto
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span>
+<span class="normal"><a href="#__codelineno-13-6">6</a></span>
+<span class="normal"><a href="#__codelineno-13-7">7</a></span>
+<span class="normal"><a href="#__codelineno-13-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a>(A) Elemento 1
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>(B) Elemento 2
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>A) Elemento 1
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a>B) Elemento 2
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7"></a>I.  Elemento 1, con dos espacios mínimos después del punto
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8"></a>II.  Elemento 2, con dos espacios mínimos después del punto
+</span></code></pre></div></td></tr></table></div>
 <p>Por otro lado, con Pandoc también podemutilitzar el símbolo <code>#</code> como marcador de lista ordenada, de forma que el sistema poso automáticamente la numeración. Así el código:</p>
-<pre><code class="language-markdonw">#. elemento 1
-#. elemento 2
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="gh">#. elemento 1</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="gh">#. elemento 2</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Generaría la lista:</p>
-<pre><code class="language-markdown">1. elemento 1
-2. elemento 2
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">1.</span> elemento 1
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="k">2.</span> elemento 2
+</span></code></pre></div></td></tr></table></div>
 <p>Otra extensión del Markdown de Pandoc respecto al Markdown original es que conserva la numeración a partir del número inicial. Por ejemplo, si indicamos por error:</p>
-<pre><code class="language-markdown">5. Elemento 5
-7. Elemento 6
-8. Elemento 7
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="k">5.</span> Elemento 5
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="k">7.</span> Elemento 6
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="k">8.</span> Elemento 7
+</span></code></pre></div></td></tr></table></div>
 <p>La salida será la siguiente, donde se corrige este error en la numeración.</p>
-<pre><code class="language-markdown">5. Elemento 5
-6. Elemento 6
-7. Elemento 7
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="k">5.</span> Elemento 5
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="k">6.</span> Elemento 6
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="k">7.</span> Elemento 7
+</span></code></pre></div></td></tr></table></div>
 <h4 id="listas-de-tareas">Listas de tareas</h4>
 <p>Una extensión más que añade la versión de Pandoc al estándar es la posibilidad de utilizar listas de tareas, introducidas al Markdown de Github.</p>
 <p>Para utilizar este tipo de listas utilizamos el guion como marcador de lista seguido de un espacio y las secuencias de caracteres <code>[ ]</code>y <code>[x]</code> para indicar un elemento de lista no marcado y marcado respectivamente. Por ejemplo:</p>
-<pre><code class="language-markdown">- [ ] Elemento de lista como tarea sin marcar
-- [x] Elemento de lista como tarea marcada.
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="k">- [ ]</span> Elemento de lista como tarea sin marcar
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="k">- [x]</span> Elemento de lista como tarea marcada.
+</span></code></pre></div></td></tr></table></div>
 <p>Obtindría como resultado:</p>
 <ul>
 <li>[ ] Elemento de lista como tarea sin marcar</li>
@@ -1087,12 +1151,15 @@ II.  Elemento 2, con dos espacios mínimos después del punto
 <p>Sin embargo, las diferentes variantes de Markdown han ido añadiendo notaciones y extensiones al Markdown original para soportar tablas.</p>
 <p>La sintaxis para crear tablas del Markdown de Github es una de los más tendidos, y hace uso de barras verticales (<code>|</code>) y guiones (<code>-</code>) para crearlas. Los guiones se utilizan por creado el encabezamiento de cada columna, y las barras verticales sirven de separador de cada columna. Además, para que la tabla se represente correctamente, hace falta una línea en blanco antes de la tabla.</p>
 <p>Las tablas, en este formato tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:</p>
-<pre><code class="language-markdown">| Cabecera 1 | Cabecera 2 |
-|-------------|-------------|
-| Valor 1     | Valor 2     |
-| Valor 3     | Valor 4     |
-</code></pre>
-<p>Que tiene como resultado:</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a>| Cabecera 1 | Cabecera 2 |
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>|-------------|-------------|
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a>| Valor 1     | Valor 2     |
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>| Valor 3     | Valor 4     |
+</span></code></pre></div></td></tr></table></div>
+Que tiene como resultado:</p>
 <table>
 <thead>
 <tr>
@@ -1121,11 +1188,14 @@ II.  Elemento 2, con dos espacios mínimos después del punto
 <p>Dentro de una tabla podemos utilizar también ciertas marcas de formato, como negritas, cursivas, enlaces, imágenes...</p>
 <p>Además, podemos aliniar el texto a la izquierda, a la derecha o en el centro de la columna, añadiendo la marca dos puntos <code>:</code>, al lado izquierda, derecho, o a los dos, de los guiones del encabezamiento.</p>
 <p>Vemos-lo con un ejemplo. La siguiente definición de tabla:</p>
-<pre><code class="language-markdown">| Texto a la izquierda | Texto centrado | Texto a la derecha |
-|        :---       |     :---:    |      ---:       |
-| xxx               | xxx          | xxx             |
-| xxxxx             | xxxxx        | xxxxx           |
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a>| Texto a la izquierda | Texto centrado | Texto a la derecha |
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a>|        :---       |     :---:    |      ---:       |
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a>| xxx               | xxx          | xxx             |
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4"></a>| xxxxx             | xxxxx        | xxxxx           |
+</span></code></pre></div></td></tr></table></div>
 <p>Tiene el siguiente resultado:</p>
 <table>
 <thead>
@@ -1155,7 +1225,7 @@ II.  Elemento 2, con dos espacios mínimos después del punto
 <h2 id="fragmentos-de-codigo">Fragmentos de código</h2>
 <p>Markdown tiene un amplio uso en la documentación técnica de proyectos informáticos, donde es habitual incluir fragmentos del código fuente de los programas. Para resaltar estos tipos de fragmentos, Markdown utiliza una sintaxis especial, haciendo uso de los caracteres del acento abierto: `.</p>
 <p>Cuando se trata de fragmentos de código que tienen que ir en la misma línea que el texto, por ejemplo si queremos indicar un hashtag #HTML, lo hacemos, `de este modo`, haciendo uso de un único carácter de acento, mientras que si el que volamos es escribir un bloque de código, utilizaríamos tres símbolos de acento abierto ```. Además, detrás los primeros símbolos, podemos especificar de qué lenguaje se trata. Por ejemplo, para indicar el código #HTML de una página web, haríamos:</p>
-<div class="highlight"><pre><span></span><code>```html
+<div class="language-text highlight"><pre><span></span><code>```html linenums=&quot;1&quot; title=&quot;HTML&quot;
   &lt;html&gt;
       &lt;body&gt;
         &lt;h1&gt;Título de la página web&lt;/h1&gt;
@@ -1164,48 +1234,62 @@ II.  Elemento 2, con dos espacios mínimos después del punto
     &lt;/html&gt;
 ```
 </code></pre></div>
-<p>Que ente generaría:</p>
-<pre><code class="language-html">   &lt;html&gt;
+<p>Que ente generaría:
+<code>html linenums="1" title="HTML"
+   &lt;html&gt;
        &lt;body&gt;
          &lt;h1&gt;Título de la página web&lt;/h1&gt;
          &lt;p&gt;Párrafo&lt;/p&gt;
        &lt;/body&gt;
-     &lt;/html&gt;
-</code></pre>
+     &lt;/html&gt;</code></p>
 <p>Hay que remarcar que el nombre del lenguaje detrás las comillas hace que al mostrar el resultado, se tenga en cuenta el lenguaje de programación para resaltar la sintaxis propia del lenguaje.</p>
 <h2 id="citas">Citas</h2>
 <p>En Markdown un bloque de texto en forma de cita consiste en uno o más párrafos u otros elementos de bloque (como por ejemplo listas o cabeceras), donde cada línea se encuentra precediera del carácter <code>&gt;</code> y opcionalmente un espacio.</p>
 <p>Vemos algunos ejemplos:</p>
 <p><em>Ejemplo 1</em>*:</p>
-<pre><code class="language-markdown">&gt;
-&gt; Un documento con formato Markdown tendría que ser publicable tal cual, como texto plano, sin que parezco que se ha marcado con hashtags o instrucciones de formato.
-&gt;
-&gt; John Gruber
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="k">&gt;</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="ge">&gt; Un documento con formato Markdown tendría que ser publicable tal cual, como texto plano, sin que parezco que se ha marcado con hashtags o instrucciones de formato.</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="k">&gt;</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="ge">&gt; John Gruber</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Genera el siguiente:</p>
 <blockquote>
 <p>Un documento con formato Markdown tendría que ser publicable tal cual, como texto plano, sin que parezco que se ha marcado con hashtags o instrucciones de formato.</p>
 <p>John Gruber</p>
 </blockquote>
 <p><em>Ejemplo 2</em></p>
-<pre><code class="language-markdown">&gt;
-&gt; # Título de la cita
-&gt;
-&gt; Una cita también miedo contener otros elementos de bloque, como por ejemplo:
-&gt;
-&gt; - listas
-&gt; - cabeceras
-&gt; - imágenes
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span>
+<span class="normal"><a href="#__codelineno-24-6">6</a></span>
+<span class="normal"><a href="#__codelineno-24-7">7</a></span>
+<span class="normal"><a href="#__codelineno-24-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="k">&gt;</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="ge">&gt; # Título de la cita</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="k">&gt;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="ge">&gt; Una cita también miedo contener otros elementos de bloque, como por ejemplo:</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="k">&gt;</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="ge">&gt; - listas</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="k">&gt; </span><span class="ge">- cabeceras</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8"></a><span class="k">&gt; </span><span class="ge">- imágenes</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Genera:</p>
 <p><img alt="Título en una cita" src="../../img/titolCita.png" /></p>
 <p>Además, podemos añadir citas dentro de otras. Con:</p>
-<pre><code class="language-markdown">&gt;
-&gt; Párrafo de la cita.
-&gt;
-&gt; &gt; Cita dentro de la cita
-&gt;
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span>
+<span class="normal"><a href="#__codelineno-25-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="k">&gt;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="ge">&gt; Párrafo de la cita.</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="k">&gt;</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="ge">&gt; &gt; Cita dentro de la cita</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5"></a>&gt;
+</span></code></pre></div></td></tr></table></div>
 <p>Generamos el siguiente:</p>
 <blockquote>
 <p>Párrafo de la cita.</p>
@@ -1215,53 +1299,63 @@ II.  Elemento 2, con dos espacios mínimos después del punto
 </blockquote>
 </blockquote>
 <p>Por otro lado, podemos especificar las citas de forma perezosa*, afeging solo el carácter <code>&gt;</code> en la primera línea de cada bloque:</p>
-<pre><code class="language-markdown">&gt; Esta es una cita, dentro de un
-paràgragraf de dos líneas.
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="k">&gt; </span><span class="ge">Esta es una cita, dentro de un</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a>paràgragraf de dos líneas.
+</span></code></pre></div></td></tr></table></div>
 <p>A pesar de ser posible, esta opción no es demasiada recomendada porque quita legibilidad en el texto en crudo. </p>
 <h2 id="enlaces">Enlaces</h2>
 <p>Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer referencia a ficheros locales, mediante su ruta relativa o incluso dentro del propio doument.</p>
 <p>El formato general para añadir un enlace es el siguiente:</p>
-<pre><code>[Texto del enlace](#URL_o_dirección_relativa)
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a>[<span class="nt">Texto del enlace</span>](<span class="na">#URL_o_dirección_relativa</span>)
+</span></code></pre></div></td></tr></table></div>
 <p>Por ejemplo, para añadir un enlace a un sitio web, escribiremos:</p>
-<pre><code>Aci añadimos un [enlace en la web del cefire](http://cefire.edu.gva.es/)
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a>Aci añadimos un [<span class="nt">enlace en la web del cefire</span>](<span class="na">http://cefire.edu.gva.es/</span>)
+</span></code></pre></div></td></tr></table></div>
 <p>Que genera:</p>
 <p>Aci añadimos un <a href="http://cefire.edu.gva.es/">enlace en la web del cefire</a></p>
 <p>Para añadir un enlace a una seccíó de nuestro documento, haremos uso del identificador que se asigna automáticamente, o bien que le hemos asignado nosotros. Por ejemplo, si para el apartado introductorio añadimos un identificador de la siguiente forma:</p>
-<pre><code class="language-markdown"># Introducción: El arte de escribir ante un ordenador {#introduccio}
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador {#introduccion}</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Podemos hacer referencia a él de la manera siguiente:</p>
-<pre><code class="language-markdown">Feudo click [en el siguiente enlace](#introduccio) para volver a la sección de Introducción.
-</code></pre>
-<p>Que generaría:</p>
-<p>Haced click <a href="#introduccio">en el siguiente enlace</a> para volver a la sección de Introducción.</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a>Feudo click [<span class="nt">en el siguiente enlace</span>](<span class="na">#introduccion</span>) para volver a la sección de Introducción.
+</span></code></pre></div></td></tr></table></div>
+Que generaría:</p>
+<p>Haced click <a href="#introduccion">en el siguiente enlace</a> para volver a la sección de Introducción.</p>
 <h2 id="imagenes">Imágenes</h2>
 <p>La sintaxis para añadir una imagen es parecida a la del enlace, predecida de una exclamación <code>!</code>:</p>
-<pre><code>![Texto alternativo o pie de la imagen](Ubicación de la imagen)
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a>![<span class="nt">Texto alternativo o pie de la imagen</span>](<span class="na">Ubicación de la imagen</span>)
+</span></code></pre></div></td></tr></table></div>
 <p>Al igual que los enlaces, la ubicación puede ser una dirección de Internet o bien la ruta a un fichero local a nuestro ordenador:</p>
-<pre><code>![Logotipo de Markdown a la Wikipèdia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png)
-
-![Logotipo de Markdown a en una ruta relativa](./../img/logoMarkdown.png)
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a>![<span class="nt">Logotipo de Markdown a la Wikipèdia</span>](<span class="na">https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png</span>)
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a>![<span class="nt">Logotipo de Markdown a en una ruta relativa</span>](<span class="na">./../img/logoMarkdown.png</span>)
+</span></code></pre></div></td></tr></table></div>
 <p>En este segundo caso, busca la imagen <em>logoMarkdown.png</em> en una carpeta imágenes* ubicada en la misma carpeta donde se encuentra nuestro archivo de texto Markdown.</p>
 <p>Hay que tener en cuenta que cuando se exporte el fichero a #HTML, estas referencias seguirán existiendo al código #HTML, por el que habrá que incluirlas en cualquier distribución del documento #HTML que basura. Por otro lado, cuando hacemos una exportación en PDF, la imagen ya se incluirá dentro del propio documento.</p>
 <h4 id="anadiendo-tamano-a-las-imagenes">Añadiendo tamaño a las imágenes</h4>
 <p>La versión de Pandoc de Markdown además permite añadir ciertos atributos a las imágenes. Entre estos  destacan especialmente <code>width</code> y <code>height</code>, que permiten especificar el tamaño de la imagen. </p>
 <p>Si no se indica nada, el tamany se entiende que se especifica en píxeles, pero podemos utilizar otras unidades como <em>px, #cm, mm, in, inch y %</em>, sin incluir espacios entre el número y las unidad. </p>
 <p>Vemos algunos ejemplos:</p>
-<pre><code class="language-markdown">![Imagen 1 - 10cm](./../img/logoMarkdown.png){ width=10cm }
-
-![Imagen 2 - 50mm](./../img/logoMarkdown.png){ width=50mm }
-
-![Imagen 3 - 50%](./../img/logoMarkdown.png){ width=50% }
-</code></pre>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span>
+<span class="normal"><a href="#__codelineno-33-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a>![<span class="nt">Imagen 1 - 10cm</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=10cm }
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3"></a>![<span class="nt">Imagen 2 - 50mm</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=50mm }
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4"></a>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5"></a>![<span class="nt">Imagen 3 - 50%</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=50% }
+</span></code></pre></div></td></tr></table></div>
 <p>Que generan el siguiente:</p>
+<div class="admonition note">
+<p class="admonition-title">Resultado</p>
 <p><img alt="Imagen 1 - 10cm" src="../../img/logoMarkdown.png" width="10cm" /></p>
 <p><img alt="Imagen 2 - 50mm" src="../../img/logoMarkdown.png" width="50mm" /></p>
 <p><img alt="Imagen 3 - 50%" src="../../img/logoMarkdown.png" width="50%" /></p>
+</div>
 <h2 id="referencias-y-informacion-adicional">Referencias y información adicional</h2>
 <p>Para mayor información sobre Markdown podéis consultar:</p>
 <ul>
