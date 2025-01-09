@@ -1,8 +1,8 @@
 # Sintaxis básica
 
-Como hemos dicho, Markdown se basa en ficheros de tipos texto, que no contienen ninguna información interna sobre el formato. Esta información, se especificará de forma explícita mediante hashtags, que serán visibles en todo momento, y que facilitarán, por un lado su interpretación en la hora de exportarlos a otro formato, pero también su lectura por parte de las personas.
+Como hemos dicho, Markdown se basa en ficheros de tipos texto, que no contienen ninguna información interna sobre el formato. Esta información, se especificará de forma explícita mediante hashtags, que serán visibles en todo momento, y que facilitarán, por un lado, su interpretación en la hora de exportarlos a otro formato, pero también su lectura por parte de las personas.
 
-En aquet apartado, el central del tema, vamos a ver cuáles son los diferentes elementos que podemos utilizar en un texto en formato Markdown, así como las principales marcas de formato.
+En este apartado, vamos a ver cuáles son los diferentes elementos que podemos utilizar en un texto en formato Markdown, así como las principales marcas de formato.
 
 ## 1. Párrafos
 
@@ -46,14 +46,14 @@ Hay varias formas de marcar cabeceras, nosotros utilizaremos el Estilo ATX, al c
 
 Cuando se genera un documento, ya sea PDF, #HTML u otro formato a partir de un documento en Markdown, a las cabeceras se los asigna un identificador de manera automática, para que se pueda hacer referencia a ellas desde otras partes del documento. Este identificador se obtiene a partir del texto de la cabecera, por el que si esta es larga, el identificador también lo será. La versión de Pandoc, nos permite añadir ciertos atributos a las cabeceras, entre las que se encuentra el identificador. 
 
-Vemos-lo con un ejemplo. Dada, por ejemplo la primera cabecera de este documento:
+Dada, por ejemplo, una cabecera como la siguiente:
 
 ```markdown title="Markdown" linenums="1"
 # Introducción: El arte de escribir ante un ordenador
 ```
 El identificador que se genera es: `id="introducción-lart-describir-ante-un-ordenador"`. 
 
-Esta cabecera, la podriem haber escrito también de la siguiente forma:
+Esta cabecera, la podríamos haber escrito también de la siguiente forma:
 
 ```markdown title="Markdown" linenums="1"
 # Introducción: El arte de escribir ante un ordenador { #introduccio }
@@ -61,7 +61,7 @@ Esta cabecera, la podriem haber escrito también de la siguiente forma:
 
 Siente el identificador de la cabecera solo `#introduccio`, de forma que podemos hacer referencia al apartado mediante este.
 
-## 3. Formatación de texto
+## 3. Formato de texto
 
 Markdown nos permite hacer uso del símbolo del asterisco como marca de formato de la siguiente forma:
 
@@ -123,7 +123,7 @@ Las listas no ordenadas se marcan haciendo uso de los símbolos `*`, `+` o `-` a
 ...
 ```
 
-Cada elemento de la lista puede contener varios párrafos, y otros contenidos a nivel de bloque. Cuando queremos incluir varios párrafos en un ítem de la lista, el segundo párrafo y posterior tendrán que ir precedidos por una línea en blanco, y sangrados por aliniar-se con el contenido que no sea el espacio después del marcador de la lista.
+Cada elemento de la lista puede contener varios párrafos, y otros contenidos a nivel de bloque. Cuando queremos incluir varios párrafos en un ítem de la lista, el segundo párrafo y posterior tendrán que ir precedidos por una línea en blanco, y sangrados para alinearse con el contenido que no sea el espacio después del marcador de la lista.
 
 Por ejemplo:
 
@@ -176,7 +176,7 @@ En estos casos, como que podemos utilizar varios símbolos para indicar listas, 
 
 El funcionamiento de las listas ordenadas es el mismo que las no ordenadas, salvo que cada elemento de la lista lleva un número.
 
-En la versión estándar de Markdown los elementos que indican la orden tienen que ser números seguidos de un punto y un espacio. En el estándar, estos números se ignoran, por el que la lista:
+En la versión estándar de Markdown, los elementos que indican la orden tienen que ser números seguidos de un punto y un espacio. En el estándar, estos números se ignoran, por lo que la lista:
 
 ```markdown title="Markdown" linenums="1"
 1. Elemento 1
@@ -200,13 +200,13 @@ Será la misma que:
 
 Las tablas nos sirven para presentar información de manera organizada.
 
-La versión original de Markdown de John Gruber no incluye la definición de tablas en la sintaxis de Markdown. Como que inicialmente se va concebir como una herramienta para hacer la conversión a HTML, para añadir tablas se utilizaba directamente este lenguaje.
+La versión original de Markdown de John Gruber no incluye la definición de tablas en la sintaxis de Markdown. Como que inicialmente se creó como una herramienta para hacer la conversión a HTML, para añadir tablas se utilizaba directamente este lenguaje.
 
 Sin embargo, las diferentes variantes de Markdown han ido añadiendo notaciones y extensiones al Markdown original para soportar tablas.
 
-La sintaxis para crear tablas del Markdown de Github es una de los más tendidos, y hace uso de barras verticales (`|`) y guiones (`-`) para crearlas. Los guiones se utilizan por creado el encabezamiento de cada columna, y las barras verticales sirven de separador de cada columna. Además, para que la tabla se represente correctamente, hace falta una línea en blanco antes de la tabla.
+La sintaxis para crear tablas del Markdown de Github es una de las más extendidas, y hace uso de barras verticales (`|`) y guiones (`-`) para crearlas. Los guiones se utilizan para crear el encabezamiento de cada columna, y las barras verticales sirven de separador de cada columna. Además, para que la tabla se represente correctamente, hace falta una línea en blanco antes de la tabla.
 
-Las tablas, en este formato tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:
+Las tablas, en este formato, tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:
 
 ```markdown title="Markdown" linenums="1"
 | Cabecera 1 | Cabecera 2 |
@@ -225,14 +225,14 @@ Las tablas, en este formato tienen que tener necesariamente una cabecera y un cu
 Algunas consideraciones:
 
 * Podemos añadir tantos campos (columnas) como queramos. 
-* La línea que separa la cabecera del cuerpo `|---|---|` es obligatoria, pero no es necesario que tenga tantos caracteres como tengan las cabeceras, por el que no hace falta que la tabla esté completamente aliniada. 
+* La línea que separa la cabecera del cuerpo `|---|---|` es obligatoria, pero no es necesario que tenga tantos caracteres como tengan las cabeceras, por el que no hace falta que la tabla esté completamente alineada. 
 * Las barras verticales (`|`) del principio y del final son opcionales.
 
 #### 6.1. Formateado el contenido de una tabla
 
 Dentro de una tabla podemos utilizar también ciertas marcas de formato, como negritas, cursivas, enlaces, imágenes...
 
-Además, podemos aliniar el texto a la izquierda, a la derecha o en el centro de la columna, añadiendo la marca dos puntos `:`, al lado izquierda, derecho, o a los dos, de los guiones del encabezamiento.
+Además, podemos alinear el texto a la izquierda, a la derecha o en el centro de la columna, añadiendo la marca dos puntos `:`, al lado izquierdo, derecho, o a los dos, de los guiones del encabezamiento.
 
 Vemos-lo con un ejemplo. La siguiente definición de tabla:
 
@@ -251,7 +251,7 @@ Vemos-lo con un ejemplo. La siguiente definición de tabla:
     | xxxxx             | xxxxx        | xxxxx           |
 
 >
-> Si el queremos añadir dentro de una tabla una barra vertical (|) como contenido, tenemos que poner antes el símbolo (`\`), para indicar que el carácter siguiente no se tiene que interpretar como marca de formato Markdown. Esta barra invertida se denomina carácter de escape*, y a la combinación de ella con cualquier marca que queramos que no se interprete se conoce como secuencia de escape*.
+> Si queremos añadir dentro de una tabla una barra vertical (|) como contenido, tenemos que poner antes el símbolo (`\`), para indicar que el carácter siguiente no se tiene que interpretar como marca de formato Markdown. Esta barra invertida se denomina carácter de escape*, y a la combinación de ella con cualquier marca que queramos que no se interprete se conoce como secuencia de escape*.
 >
 
 ## 7. Fragmentos de código
@@ -275,7 +275,7 @@ Hay que remarcar que el nombre del lenguaje detrás las comillas hace que al mos
 
 ## 8. Citas
 
-En Markdown un bloque de texto en forma de cita consiste en uno o más párrafos u otros elementos de bloque (como por ejemplo listas o cabeceras), donde cada línea se encuentra precediera del carácter `>` y opcionalmente un espacio.
+En Markdown, un bloque de texto en forma de cita consiste en uno o más párrafos u otros elementos de bloque (como, por ejemplo, listas o cabeceras), donde cada línea se encuentra precediera del carácter `>` y opcionalmente un espacio.
 
 Vemos algunos ejemplos:
 
@@ -296,7 +296,7 @@ Ejemplo:
 
 ## 9. Enlaces
 
-Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer referencia a ficheros locales, mediante su ruta relativa o incluso dentro del propio doument.
+Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer referencia a ficheros locales, mediante su ruta relativa o incluso dentro del propio documento.
 
 El formato general para añadir un enlace es el siguiente:
 
@@ -326,16 +326,16 @@ Por ejemplo, si para el apartado introductorio añadimos un identificador de la 
 Podemos hacer referencia a él de la manera siguiente:
 
 ```markdown title="Markdown" linenums="1"
-Haz click [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
+Haz clic [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
 ```
 
 !!! note "Resultado"
-    Haz click [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
+    Haz clic [en el siguiente enlace](#introduccion) para volver a la sección de Introducción.
 
 
 ## 10. Imágenes
 
-La sintaxis para añadir una imagen es parecida a la del enlace, predecida de una exclamación `!`:
+La sintaxis para añadir una imagen es parecida a la del enlace, precedida de una exclamación `!`:
 
 ```markdown title="Markdown" linenums="1"
 ![Texto alternativo o pie de la imagen](Ubicación de la imagen)
@@ -344,7 +344,7 @@ La sintaxis para añadir una imagen es parecida a la del enlace, predecida de un
 Al igual que los enlaces, la ubicación puede ser una dirección de Internet o bien la ruta a un fichero local a nuestro ordenador:
 
 ```markdown title="Markdown" linenums="1"
-![Logotipo de Markdown a la Wikipèdia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png)
+![Logotipo de Markdown a la Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png)
 
 ![Logotipo de Markdown a en una ruta relativa](./../img/logoMarkdown.png)
 ```
@@ -356,9 +356,9 @@ Hay que tener en cuenta que cuando se exporte el fichero a HTML, estas referenci
 #### 10.1. Añadiendo tamaño a las imágenes
 
 Algunas versiones de Markdown (como Pandoc) permiten añadir ciertos atributos a las imágenes. 
-Entre estos  destacan especialmente (`width`) y (`height`), que permiten especificar el tamaño de la imagen. 
+Entre estos destacan especialmente (`width`) y (`height`), que permiten especificar el tamaño de la imagen. 
 
-Si no se indica nada, el tamaño se entiende que se especifica en píxeles, pero podemos utilizar otras unidades como *px, #cm, mm, in, inch y %*, sin incluir espacios entre el número y las unidad. 
+Si no se indica nada, el tamaño se entiende que se especifica en píxeles, pero podemos utilizar otras unidades como *px, #cm, mm, in, inch y %*, sin incluir espacios entre el número y las unidades. 
 
 Ejemplos:
 

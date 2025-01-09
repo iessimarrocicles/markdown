@@ -4,7 +4,7 @@ Markdown nació como una herramienta de conversión de texto plano a HTML. Fue c
 
 Aunque en realidad, Markdown también se considera un lenguaje cuyo objetivo es permitir la creación de contenido de forma sencilla, manteniendo un diseño legible. Por lo tanto, se puede simplificar definiendo Markdown como un **método de escritura**.
 
-De cara al usuario final, no hay ninguna diferencia perceptible. Por ejemplo, este artículo acerca de cómo funciona Markdown está escrito en este formato, y sin embargo, lo ves perfectamente formateado.
+De cara al usuario final, no hay ninguna diferencia perceptible. Por ejemplo, este artículo acerca de cómo funciona Markdown está escrito en este formato, y, sin embargo, lo ves perfectamente formateado.
 
 Este método permite añadir formatos como **negritas**, *cursivas* o enlaces, utilizando simplemente texto plano, lo que hace que la escritura sea más simple y eficiente al evitar distracciones.
 
@@ -18,7 +18,7 @@ Observa la diferencia entre la sintaxis Markdown (izquierda) y la sintaxis HTML 
   ![Diferencia MarkDown vs HTML](./../img/diferencia_markdown_html.jpg)
 </figure>
 
-Para conseguir esto, necesitarás conocer la sintaxis Markdown.
+Para lograrlo, necesitarás conocer la sintaxis Markdown.
 
 ---
 
@@ -34,7 +34,7 @@ Muchas publicaciones en Amazon, Google Play o iBooks han sido creadas gracias a 
 
 ---
 
-## Por qué utilizar Markdown
+## ¿Por qué utilizar Markdown?
 
 Markdown es un lenguaje de marcado basado en un formato de texto plano. Este tipo de formato es **compatible con todas las plataformas**, lo que garantiza que tu contenido será accesible desde cualquier dispositivo: smartphones, ordenadores de escritorio, tablets, etc. En cualquiera de ellos encontrarás aplicaciones adecuadas para leer y editar este tipo de contenido.
 

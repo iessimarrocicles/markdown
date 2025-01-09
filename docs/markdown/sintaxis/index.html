@@ -407,9 +407,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-formatacion-de-texto" class="md-nav__link">
+  <a href="#3-formato-de-texto" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Formatación de texto
+      3. Formato de texto
     </span>
   </a>
   
@@ -770,9 +770,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-formatacion-de-texto" class="md-nav__link">
+  <a href="#3-formato-de-texto" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Formatación de texto
+      3. Formato de texto
     </span>
   </a>
   
@@ -926,8 +926,8 @@
 
 
 <h1 id="sintaxis-basica">Sintaxis básica</h1>
-<p>Como hemos dicho, Markdown se basa en ficheros de tipos texto, que no contienen ninguna información interna sobre el formato. Esta información, se especificará de forma explícita mediante hashtags, que serán visibles en todo momento, y que facilitarán, por un lado su interpretación en la hora de exportarlos a otro formato, pero también su lectura por parte de las personas.</p>
-<p>En aquet apartado, el central del tema, vamos a ver cuáles son los diferentes elementos que podemos utilizar en un texto en formato Markdown, así como las principales marcas de formato.</p>
+<p>Como hemos dicho, Markdown se basa en ficheros de tipos texto, que no contienen ninguna información interna sobre el formato. Esta información, se especificará de forma explícita mediante hashtags, que serán visibles en todo momento, y que facilitarán, por un lado, su interpretación en la hora de exportarlos a otro formato, pero también su lectura por parte de las personas.</p>
+<p>En este apartado, vamos a ver cuáles son los diferentes elementos que podemos utilizar en un texto en formato Markdown, así como las principales marcas de formato.</p>
 <h2 id="1-parrafos">1. Párrafos</h2>
 <p>Un párrafo, tal y como lo entiende Markdown, es un bloque de texto definido entre dos saltos de línea (tecla <code>Intro/Entero/Entrar</code>). </p>
 <p>Si utilizamos solo un salto de línea, se sobreentiende que es el mismo párrafo, y en la hora de generar el documento, lo veremos como tal.</p>
@@ -966,15 +966,15 @@
 </blockquote>
 <h3 id="21-atributos-a-la-cabecera">2.1. Atributos a la cabecera</h3>
 <p>Cuando se genera un documento, ya sea PDF, #HTML u otro formato a partir de un documento en Markdown, a las cabeceras se los asigna un identificador de manera automática, para que se pueda hacer referencia a ellas desde otras partes del documento. Este identificador se obtiene a partir del texto de la cabecera, por el que si esta es larga, el identificador también lo será. La versión de Pandoc, nos permite añadir ciertos atributos a las cabeceras, entre las que se encuentra el identificador. </p>
-<p>Vemos-lo con un ejemplo. Dada, por ejemplo la primera cabecera de este documento:</p>
+<p>Dada, por ejemplo, una cabecera como la siguiente:</p>
 <p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador</span>
 </span></code></pre></div></td></tr></table></div>
 El identificador que se genera es: <code>id="introducción-lart-describir-ante-un-ordenador"</code>. </p>
-<p>Esta cabecera, la podriem haber escrito también de la siguiente forma:</p>
+<p>Esta cabecera, la podríamos haber escrito también de la siguiente forma:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador { #introduccio }</span>
 </span></code></pre></div></td></tr></table></div>
 <p>Siente el identificador de la cabecera solo <code>#introduccio</code>, de forma que podemos hacer referencia al apartado mediante este.</p>
-<h2 id="3-formatacion-de-texto">3. Formatación de texto</h2>
+<h2 id="3-formato-de-texto">3. Formato de texto</h2>
 <p>Markdown nos permite hacer uso del símbolo del asterisco como marca de formato de la siguiente forma:</p>
 <ul>
 <li>Negrita: rodea el texto con <code>**</code>.</li>
@@ -1027,7 +1027,7 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="k">*</span><span class="w"> </span>Elemento 2
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>...
 </span></code></pre></div></td></tr></table></div>
-<p>Cada elemento de la lista puede contener varios párrafos, y otros contenidos a nivel de bloque. Cuando queremos incluir varios párrafos en un ítem de la lista, el segundo párrafo y posterior tendrán que ir precedidos por una línea en blanco, y sangrados por aliniar-se con el contenido que no sea el espacio después del marcador de la lista.</p>
+<p>Cada elemento de la lista puede contener varios párrafos, y otros contenidos a nivel de bloque. Cuando queremos incluir varios párrafos en un ítem de la lista, el segundo párrafo y posterior tendrán que ir precedidos por una línea en blanco, y sangrados para alinearse con el contenido que no sea el espacio después del marcador de la lista.</p>
 <p>Por ejemplo:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
 <span class="normal"><a href="#__codelineno-7-2">2</a></span>
@@ -1093,7 +1093,7 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </div>
 <h4 id="52-listas-ordenadas">5.2. Listas ordenadas</h4>
 <p>El funcionamiento de las listas ordenadas es el mismo que las no ordenadas, salvo que cada elemento de la lista lleva un número.</p>
-<p>En la versión estándar de Markdown los elementos que indican la orden tienen que ser números seguidos de un punto y un espacio. En el estándar, estos números se ignoran, por el que la lista:</p>
+<p>En la versión estándar de Markdown, los elementos que indican la orden tienen que ser números seguidos de un punto y un espacio. En el estándar, estos números se ignoran, por lo que la lista:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
 <span class="normal"><a href="#__codelineno-10-2">2</a></span>
 <span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">1.</span> Elemento 1
@@ -1117,10 +1117,10 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </div>
 <h2 id="6-tablas">6. Tablas</h2>
 <p>Las tablas nos sirven para presentar información de manera organizada.</p>
-<p>La versión original de Markdown de John Gruber no incluye la definición de tablas en la sintaxis de Markdown. Como que inicialmente se va concebir como una herramienta para hacer la conversión a HTML, para añadir tablas se utilizaba directamente este lenguaje.</p>
+<p>La versión original de Markdown de John Gruber no incluye la definición de tablas en la sintaxis de Markdown. Como que inicialmente se creó como una herramienta para hacer la conversión a HTML, para añadir tablas se utilizaba directamente este lenguaje.</p>
 <p>Sin embargo, las diferentes variantes de Markdown han ido añadiendo notaciones y extensiones al Markdown original para soportar tablas.</p>
-<p>La sintaxis para crear tablas del Markdown de Github es una de los más tendidos, y hace uso de barras verticales (<code>|</code>) y guiones (<code>-</code>) para crearlas. Los guiones se utilizan por creado el encabezamiento de cada columna, y las barras verticales sirven de separador de cada columna. Además, para que la tabla se represente correctamente, hace falta una línea en blanco antes de la tabla.</p>
-<p>Las tablas, en este formato tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:</p>
+<p>La sintaxis para crear tablas del Markdown de Github es una de las más extendidas, y hace uso de barras verticales (<code>|</code>) y guiones (<code>-</code>) para crearlas. Los guiones se utilizan para crear el encabezamiento de cada columna, y las barras verticales sirven de separador de cada columna. Además, para que la tabla se represente correctamente, hace falta una línea en blanco antes de la tabla.</p>
+<p>Las tablas, en este formato, tienen que tener necesariamente una cabecera y un cuerpo, y seguirán la siguiente sintaxis:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
 <span class="normal"><a href="#__codelineno-12-2">2</a></span>
 <span class="normal"><a href="#__codelineno-12-3">3</a></span>
@@ -1153,12 +1153,12 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 <p>Algunas consideraciones:</p>
 <ul>
 <li>Podemos añadir tantos campos (columnas) como queramos. </li>
-<li>La línea que separa la cabecera del cuerpo <code>|---|---|</code> es obligatoria, pero no es necesario que tenga tantos caracteres como tengan las cabeceras, por el que no hace falta que la tabla esté completamente aliniada. </li>
+<li>La línea que separa la cabecera del cuerpo <code>|---|---|</code> es obligatoria, pero no es necesario que tenga tantos caracteres como tengan las cabeceras, por el que no hace falta que la tabla esté completamente alineada. </li>
 <li>Las barras verticales (<code>|</code>) del principio y del final son opcionales.</li>
 </ul>
 <h4 id="61-formateado-el-contenido-de-una-tabla">6.1. Formateado el contenido de una tabla</h4>
 <p>Dentro de una tabla podemos utilizar también ciertas marcas de formato, como negritas, cursivas, enlaces, imágenes...</p>
-<p>Además, podemos aliniar el texto a la izquierda, a la derecha o en el centro de la columna, añadiendo la marca dos puntos <code>:</code>, al lado izquierda, derecho, o a los dos, de los guiones del encabezamiento.</p>
+<p>Además, podemos alinear el texto a la izquierda, a la derecha o en el centro de la columna, añadiendo la marca dos puntos <code>:</code>, al lado izquierdo, derecho, o a los dos, de los guiones del encabezamiento.</p>
 <p>Vemos-lo con un ejemplo. La siguiente definición de tabla:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
 <span class="normal"><a href="#__codelineno-13-2">2</a></span>
@@ -1193,7 +1193,7 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </table>
 </div>
 <blockquote>
-<p>Si el queremos añadir dentro de una tabla una barra vertical (|) como contenido, tenemos que poner antes el símbolo (<code>\</code>), para indicar que el carácter siguiente no se tiene que interpretar como marca de formato Markdown. Esta barra invertida se denomina carácter de escape<em>, y a la combinación de ella con cualquier marca que queramos que no se interprete se conoce como secuencia de escape</em>.
+<p>Si queremos añadir dentro de una tabla una barra vertical (|) como contenido, tenemos que poner antes el símbolo (<code>\</code>), para indicar que el carácter siguiente no se tiene que interpretar como marca de formato Markdown. Esta barra invertida se denomina carácter de escape<em>, y a la combinación de ella con cualquier marca que queramos que no se interprete se conoce como secuencia de escape</em>.
 </p>
 </blockquote>
 <h2 id="7-fragmentos-de-codigo">7. Fragmentos de código</h2>
@@ -1217,7 +1217,7 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </span></code></pre></div></td></tr></table></div>
 <p>Hay que remarcar que el nombre del lenguaje detrás las comillas hace que al mostrar el resultado, se tenga en cuenta el lenguaje de programación para resaltar la sintaxis propia del lenguaje.</p>
 <h2 id="8-citas">8. Citas</h2>
-<p>En Markdown un bloque de texto en forma de cita consiste en uno o más párrafos u otros elementos de bloque (como por ejemplo listas o cabeceras), donde cada línea se encuentra precediera del carácter <code>&gt;</code> y opcionalmente un espacio.</p>
+<p>En Markdown, un bloque de texto en forma de cita consiste en uno o más párrafos u otros elementos de bloque (como, por ejemplo, listas o cabeceras), donde cada línea se encuentra precediera del carácter <code>&gt;</code> y opcionalmente un espacio.</p>
 <p>Vemos algunos ejemplos:</p>
 <p>Ejemplo:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
@@ -1236,7 +1236,7 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 </blockquote>
 </div>
 <h2 id="9-enlaces">9. Enlaces</h2>
-<p>Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer referencia a ficheros locales, mediante su ruta relativa o incluso dentro del propio doument.</p>
+<p>Markdown nos permite generar enlaces tanto a direcciones de Internet, como hacer referencia a ficheros locales, mediante su ruta relativa o incluso dentro del propio documento.</p>
 <p>El formato general para añadir un enlace es el siguiente:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a>[<span class="nt">Texto del enlace</span>](<span class="na">#URL_o_dirección_relativa</span>)
 </span></code></pre></div></td></tr></table></div>
@@ -1253,20 +1253,20 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="gh"># Introducción: El arte de escribir ante un ordenador {#introduccion}</span>
 </span></code></pre></div></td></tr></table></div>
 <p>Podemos hacer referencia a él de la manera siguiente:</p>
-<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a>Haz click [<span class="nt">en el siguiente enlace</span>](<span class="na">#introduccion</span>) para volver a la sección de Introducción.
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a>Haz clic [<span class="nt">en el siguiente enlace</span>](<span class="na">#introduccion</span>) para volver a la sección de Introducción.
 </span></code></pre></div></td></tr></table></div>
 <div class="admonition note">
 <p class="admonition-title">Resultado</p>
-<p>Haz click <a href="#introduccion">en el siguiente enlace</a> para volver a la sección de Introducción.</p>
+<p>Haz clic <a href="#introduccion">en el siguiente enlace</a> para volver a la sección de Introducción.</p>
 </div>
 <h2 id="10-imagenes">10. Imágenes</h2>
-<p>La sintaxis para añadir una imagen es parecida a la del enlace, predecida de una exclamación <code>!</code>:</p>
+<p>La sintaxis para añadir una imagen es parecida a la del enlace, precedida de una exclamación <code>!</code>:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a>![<span class="nt">Texto alternativo o pie de la imagen</span>](<span class="na">Ubicación de la imagen</span>)
 </span></code></pre></div></td></tr></table></div>
 <p>Al igual que los enlaces, la ubicación puede ser una dirección de Internet o bien la ruta a un fichero local a nuestro ordenador:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
 <span class="normal"><a href="#__codelineno-21-2">2</a></span>
-<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a>![<span class="nt">Logotipo de Markdown a la Wikipèdia</span>](<span class="na">https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png</span>)
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a>![<span class="nt">Logotipo de Markdown a la Wikipedia</span>](<span class="na">https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png</span>)
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a>![<span class="nt">Logotipo de Markdown a en una ruta relativa</span>](<span class="na">./../img/logoMarkdown.png</span>)
 </span></code></pre></div></td></tr></table></div>
@@ -1274,8 +1274,8 @@ El identificador que se genera es: <code>id="introducción-lart-describir-ante-u
 <p>Hay que tener en cuenta que cuando se exporte el fichero a HTML, estas referencias seguirán existiendo al código HTML.</p>
 <h4 id="101-anadiendo-tamano-a-las-imagenes">10.1. Añadiendo tamaño a las imágenes</h4>
 <p>Algunas versiones de Markdown (como Pandoc) permiten añadir ciertos atributos a las imágenes. 
-Entre estos  destacan especialmente (<code>width</code>) y (<code>height</code>), que permiten especificar el tamaño de la imagen. </p>
-<p>Si no se indica nada, el tamaño se entiende que se especifica en píxeles, pero podemos utilizar otras unidades como <em>px, #cm, mm, in, inch y %</em>, sin incluir espacios entre el número y las unidad. </p>
+Entre estos destacan especialmente (<code>width</code>) y (<code>height</code>), que permiten especificar el tamaño de la imagen. </p>
+<p>Si no se indica nada, el tamaño se entiende que se especifica en píxeles, pero podemos utilizar otras unidades como <em>px, #cm, mm, in, inch y %</em>, sin incluir espacios entre el número y las unidades. </p>
 <p>Ejemplos:</p>
 <div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
 <span class="normal"><a href="#__codelineno-22-2">2</a></span>
