@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../github/">
+        <link rel="prev" href="../introduccion/">
       
+      
+        <link rel="next" href="../configuracion/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Referencias - PROYECTO INTERMODULAR</title>
+        <title>Instalación - PROYECTO INTERMODULAR</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#referencias-e-informacion-adicional-mkdocs" class="md-skip">
+        <a href="#instalacion-mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Referencias
+              Instalación
             
           </span>
         </div>
@@ -428,10 +430,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../instalacion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Instalación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -440,6 +462,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-instalacion-de-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Instalación de MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creacion-de-un-nuevo-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Creación de un nuevo proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estructura-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Estructura del proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-servir-la-web-en-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Servir la web en local
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -491,19 +569,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../referencias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +581,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -545,6 +613,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-instalacion-de-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Instalación de MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creacion-de-un-nuevo-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Creación de un nuevo proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estructura-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Estructura del proyecto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-servir-la-web-en-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Servir la web en local
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -558,13 +670,75 @@
                   
 
 
-<h1 id="referencias-e-informacion-adicional-mkdocs">Referencias e información adicional MkDocs</h1>
-<p>Para mayor información sobre MkDocs podéis consultar:</p>
+<h1 id="instalacion-mkdocs">Instalación MkDocs</h1>
+<p>Para seguir estos pasos, recomendamos utilizar <strong>Visual Studio Code (VSCode)</strong>, ya que permite disponer de un editor de archivos y una terminal integrada en el mismo programa.</p>
+<h2 id="1-instalacion-de-mkdocs">1. Instalación de MkDocs</h2>
+<p>Para instalar <strong>MkDocs</strong> en nuestro ordenador, ejecutaremos el siguiente comando en la consola (Konsole para LliureX, PowerShell para Windows...):</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Pip</p>
+<p>Si no tienes instaldo pip, tendrás que instalar Python3 y, durante la instalación, marcar la opción de instalar pip y añadirlo al PATH. Puedes descargar Python3 en el siguiente enlace <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p>
+</div>
+<p>Una vez que MkDocs esté instalado, deberías poder ejecutar el siguiente comando en la consola:</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>mkdocs<span class="w"> </span>--version
+</span></code></pre></div></td></tr></table></div>
+<p>Si todo va bien, obtendrás una respuesta similar a la siguiente:</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>Linux:
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w"> </span>-<span class="w"> </span>mkdocs,<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.6.1<span class="w"> </span>from<span class="w"> </span>/home/usuario/.local/lib/python3.13/site-packages/mkdocs<span class="w"> </span><span class="o">(</span>Python<span class="w"> </span><span class="m">3</span>.13<span class="o">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>Windows:
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w"> </span>-<span class="w"> </span>mkdocs,<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.6.1<span class="w"> </span>from<span class="w"> </span>C:<span class="se">\U</span>sers<span class="se">\U</span>suario<span class="se">\A</span>ppData<span class="se">\L</span>ocal<span class="se">\P</span>rograms<span class="se">\P</span>ython<span class="se">\P</span>ython313<span class="se">\L</span>ib<span class="se">\s</span>ite-packages<span class="se">\m</span>kdocs<span class="w"> </span><span class="o">(</span>Python<span class="w"> </span><span class="m">3</span>.13<span class="o">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="2-creacion-de-un-nuevo-proyecto">2. Creación de un nuevo proyecto</h2>
+<p>Ahora que MkDocs está instalado, necesitamos crear un nuevo proyecto para construir nuestro sitio web. Para ello, ejecutamos:</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span><span class="s2">&quot;nombre_del_proyecto&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="3-estructura-del-proyecto">3. Estructura del proyecto</h2>
+<p>Al crear un nuevo proyecto con MkDocs, verás que se ha generado una estructura parecida a esta:</p>
+<div class="language-text highlight"><span class="filename">Text only</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>.
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── docs
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>│   └── index.md
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>└── mkdocs.yml
+</span></code></pre></div>
 <ul>
-<li>La guía de MkDocs: <a href="https://www.mkdocs.org/">https://www.mkdocs.org/</a> </li>
-<li>Catálogo GitHub: <a href="https://github.com/mkdocs/catalog">https://github.com/mkdocs/catalog</a></li>
-<li>La guía de Material para MkDocs <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/">manual de referencia</a> </li>
+<li>El archivo <strong>mkdocs.yml</strong> es el archivo de configuración principal de todo el proyecto.</li>
+<li>La carpeta <strong>docs</strong> contendrá los documentos en formato Markdown.</li>
+<li>El archivo <strong>index.md</strong> es un archivo de muestra que se mostrará al acceder a la raíz del sitio web.</li>
 </ul>
+<p>Como puedes observar, por un lado tendrás el contenido en formato Markdown y, por otro, la configuración de cómo se va a renderizar este contenido.</p>
+<div class="admonition warning">
+<p class="admonition-title">Carpeta docs</p>
+<p>Aunque, por defecto, los archivos Markdown se encuentren en la carpeta docs, más adelante modificaremos esta configuración.</p>
+</div>
+<h2 id="4-servir-la-web-en-local">4. Servir la web en local</h2>
+<p>Para servir una web, normalmente necesitaríamos un servidor que hospede nuestro sitio y que nos permita acceder a él de forma local o remota a través del navegador. MkDocs nos facilita esta tarea creando un servidor en nuestro propio equipo para que podamos previsualizar los cambios antes de publicarlos en un servidor público (accesible desde Internet) o de compilar el sitio para su publicación.</p>
+<p>Para servir la web, simplemente ejecuta el siguiente comando dentro de la carpeta del proyecto (usa el comando cd para entrar en ella):</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>$<span class="w"> </span>mkdocs<span class="w"> </span>serve
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>INFO<span class="w">     </span>-<span class="w">  </span>Building<span class="w"> </span>documentation...
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>INFO<span class="w">     </span>-<span class="w">  </span>Cleaning<span class="w"> </span>site<span class="w"> </span>directory
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>INFO<span class="w">     </span>-<span class="w">  </span>Documentation<span class="w"> </span>built<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">0</span>.06<span class="w"> </span>seconds
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>INFO<span class="w">     </span>-<span class="w">  </span><span class="o">[</span><span class="m">12</span>:49:32<span class="o">]</span><span class="w"> </span>Watching<span class="w"> </span>paths<span class="w"> </span><span class="k">for</span><span class="w"> </span>changes:<span class="w"> </span><span class="s1">&#39;docs&#39;</span>,<span class="w"> </span><span class="s1">&#39;mkdocs.yml&#39;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>INFO<span class="w">     </span>-<span class="w">  </span><span class="o">[</span><span class="m">12</span>:49:32<span class="o">]</span><span class="w"> </span>Serving<span class="w"> </span>on<span class="w"> </span>http://127.0.0.1:8000/
+</span></code></pre></div></td></tr></table></div>
+<p>A continuación, accede a la URL http://127.0.0.1:8000/ y verás la página web por defecto:</p>
+<figure>
+  <img alt="Página inicial" src="../../img/instalacionDefecto.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Índice por defecto</p>
+<p>Abre en VSCode el archivo index.md y comprueba cómo se corresponde con lo que ves en tu navegador. Es decir, MkDocs está convirtiendo el contenido Markdown a un formato web.</p>
+<p>Ahora puedes introducir los cambios que desees en tu contenido; al guardar, los cambios se reflejarán automáticamente en el navegador, siempre y cuando el comando <code>mkdocs serve</code> siga en ejecución. <strong>La recarga automática se produce siempre que modifiques el archivo de configuración, los archivos Markdown o cualquier archivo del tema que estés usando.</strong></p>
+</div>
 
 
 

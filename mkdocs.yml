@@ -20,6 +20,7 @@ nav:
   - Referencias: markdown/referencias.md
 - MkDocs:
   - Introducción: mkdocs/introduccion.md
+  - Instalación: mkdocs/instalacion.md
   - Configuración: mkdocs/configuracion.md
   - Alojamiento en GitHub: mkdocs/github.md
   - Referencias: mkdocs/referencias.md
