@@ -67,7 +67,7 @@ nav:
 Observa que también disponemos de un buscador en el menú de navegación, que nos permitirá realizar búsquedas en todo el contenido del sitio web.
 
 !!!note "Buscador" 
-    Esto puede ser muy útil para tu alumnado, ya que así podrán utilizar tus materiales como documentación de referencia y encontrar de forma rápida el contenido que les interese.
+    Esto puede ser muy útil para tu lectores, ya que así podrán utilizar tus materiales como documentación de referencia y encontrar de forma rápida el contenido que les interese.
 
     El motor de búsqueda localizará todas las apariciones de la palabra que se introduzca en el buscador.
 

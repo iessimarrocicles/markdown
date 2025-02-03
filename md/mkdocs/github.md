@@ -24,11 +24,11 @@ El *sistema de control* de versiones nos permite, entre otras cosas, ver qué ca
 
 Otro ejemplo muy claro de control de versiones lo vemos en Google Docs. Para acceder a las distintas versiones de un documento, basta con hacer clic en el indicador que muestra la última fecha de modificación. En la ventana que aparece, podemos ver todas las revisiones guardadas, observar en verde lo que se ha añadido o cambiado y, si lo deseamos, revertir el documento a un estado anterior.
 
-![GSuite: obrir control de versions](img/github/control-version-gsuite.png)
+![GSuite: obrir control de versions](./../img/githubControl-version-gsuite.png)
 
 Además de la vista con todas las versiones, también podemos ver en verde el contenido nuevo y, en ocasiones, con texto tachado las partes que se han eliminado.
 
-![GSuite: versions de document](img/github/control-version-gsuite-2.png)
+![GSuite: versions de document](./../img/githubControl-version-gsuite-2.png)
 
 VSCode también ofrece un sistema básico de control de versiones para nuestros archivos: permite volver a un punto anterior en el tiempo. Para usarlo, haz clic en la parte inferior derecha, en *TIMELINE* o *LÍNEA DE TIEMPO* (según el idioma), donde verás las diferentes versiones que se han guardado de forma automática. Al pulsar sobre cualquier versión, el editor te mostrará los cambios realizados respecto a la actual y te dará la opción de recuperar la versión anterior si así lo prefieres.
 
@@ -147,6 +147,7 @@ Ahora debemos crear un proyecto de mkdocs dentro de la carpeta del repositorio o
     Por defecto, los archivos Markdown en un proyecto mkdocs se encuentran en la carpeta `docs`, mientras que el sitio web generado se construye en la carpeta `site`. Sin embargo, GitHub Pages solo puede publicar una web desde la raíz del repositorio o desde la carpeta docs.    
 
     Por tanto, tenemos dos opciones:
+
     1. Ejecutar `mkdocs build` y copiar el contenido de la carpeta `site` a la raíz del repositorio (opción no recomendada).
     2. Ajustar la configuración para que los archivos fuente en Markdown estén en otra carpeta y el resultado de la compilación se genere en `docs` (opción recomendada). 
 
@@ -228,3 +229,79 @@ Después de unos instantes (la primera vez puede tardar 5 minutos), GitHub indic
 
 !!!note "Uso de Source Control"
     Si estás acostumbrado a trabajar con Git y GitHub desde línea de comandos, puedes usar directamente `git clone`, `git add`, `git commit` y `git push`. Visual Studio Code actúa como una interfaz gráfica que simplifica el proceso, pero el funcionamiento interno es el mismo. 
+
+## 4. Mi archivo completo mkdocs.yml
+
+Os dejo como tengo configurado mi archivo mkdocs.yml de la web del Proyecto intermodular
+
+```yaml title="YAML" linenums="1"
+# Nom del lloc
+site_name: PROYECTO INTERMODULAR
+
+# Carpeta amb el documents font
+docs_dir: 'md'
+
+# Carpeta on es generarà el lloc web (mkdocs build)
+site_dir: 'docs'
+
+# Adreça on s'executa el server local (mkdocs serve)
+dev_addr: localhost:4000
+
+# Navegació dels documents
+nav:
+- Inicio: index.md
+- Markdown:
+  - Introducción: markdown/introduccion.md
+  - Editores: markdown/editores.md
+  - Sintaxis básica: markdown/sintaxis.md
+  - Referencias: markdown/referencias.md
+- MkDocs:
+  - Introducción: mkdocs/introduccion.md
+  - Instalación: mkdocs/instalacion.md
+  - Configuración: mkdocs/configuracion.md
+  - Alojamiento en GitHub: mkdocs/github.md
+  - Referencias: mkdocs/referencias.md
+
+# Extenions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+# Tema a triar
+theme: 
+  name: material   # selecció del tema - mkdocs o readthedocs / material (pip install mkdocs-material)
+  highlightjs: true
+  palette:
+   # Boto que canvia a mode oscur
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Botó que canvia a mode clar
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # utilitats de copia de codi
+    - content.code.copy 
+    - content.code.select
+    - content.code.annotate
+    - navigation.top    # boto flotant de tornar a dalt 
+
+extra_css:
+  - css/extra.css
+
+# Altres afegits
+plugins:
+  - search      # plugin del quadre cerca
+```
+

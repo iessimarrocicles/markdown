@@ -646,6 +646,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-mi-archivo-completo-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Mi archivo completo mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -835,6 +844,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-mi-archivo-completo-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Mi archivo completo mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -868,9 +886,9 @@
 </ul>
 <p>El <em>sistema de control</em> de versiones nos permite, entre otras cosas, ver qué cambios se han hecho, revertirlos, fusionarlos o incluso volver a versiones anteriores del proyecto.</p>
 <p>Otro ejemplo muy claro de control de versiones lo vemos en Google Docs. Para acceder a las distintas versiones de un documento, basta con hacer clic en el indicador que muestra la última fecha de modificación. En la ventana que aparece, podemos ver todas las revisiones guardadas, observar en verde lo que se ha añadido o cambiado y, si lo deseamos, revertir el documento a un estado anterior.</p>
-<p><img alt="GSuite: obrir control de versions" src="img/github/control-version-gsuite.png" /></p>
+<p><img alt="GSuite: obrir control de versions" src="../../img/githubControl-version-gsuite.png" /></p>
 <p>Además de la vista con todas las versiones, también podemos ver en verde el contenido nuevo y, en ocasiones, con texto tachado las partes que se han eliminado.</p>
-<p><img alt="GSuite: versions de document" src="img/github/control-version-gsuite-2.png" /></p>
+<p><img alt="GSuite: versions de document" src="../../img/githubControl-version-gsuite-2.png" /></p>
 <p>VSCode también ofrece un sistema básico de control de versiones para nuestros archivos: permite volver a un punto anterior en el tiempo. Para usarlo, haz clic en la parte inferior derecha, en <em>TIMELINE</em> o <em>LÍNEA DE TIEMPO</em> (según el idioma), donde verás las diferentes versiones que se han guardado de forma automática. Al pulsar sobre cualquier versión, el editor te mostrará los cambios realizados respecto a la actual y te dará la opción de recuperar la versión anterior si así lo prefieres.</p>
 <figure>
   <img alt="VSCode TimeLine" src="../../img/githubTimeline.png" />
@@ -950,9 +968,11 @@
 <div class="admonition important">
 <p class="admonition-title">Carpeta docs y site</p>
 <p>Por defecto, los archivos Markdown en un proyecto mkdocs se encuentran en la carpeta <code>docs</code>, mientras que el sitio web generado se construye en la carpeta <code>site</code>. Sin embargo, GitHub Pages solo puede publicar una web desde la raíz del repositorio o desde la carpeta docs.    </p>
-<p>Por tanto, tenemos dos opciones:
-1. Ejecutar <code>mkdocs build</code> y copiar el contenido de la carpeta <code>site</code> a la raíz del repositorio (opción no recomendada).
-2. Ajustar la configuración para que los archivos fuente en Markdown estén en otra carpeta y el resultado de la compilación se genere en <code>docs</code> (opción recomendada). </p>
+<p>Por tanto, tenemos dos opciones:</p>
+<ol>
+<li>Ejecutar <code>mkdocs build</code> y copiar el contenido de la carpeta <code>site</code> a la raíz del repositorio (opción no recomendada).</li>
+<li>Ajustar la configuración para que los archivos fuente en Markdown estén en otra carpeta y el resultado de la compilación se genere en <code>docs</code> (opción recomendada). </li>
+</ol>
 <p>Con la <strong>segunda opción recomendada</strong> podemos conservar tanto los archivos fuente en Markdown como la web compilada en un mismo repositorio de GitHub.</p>
 </div>
 <p>Para configurar esta segunda opción, debemos modificar el archivo de configuración de mkdocs e indicar lo siguiente:</p>
@@ -1009,6 +1029,144 @@
 <p class="admonition-title">Uso de Source Control</p>
 <p>Si estás acostumbrado a trabajar con Git y GitHub desde línea de comandos, puedes usar directamente <code>git clone</code>, <code>git add</code>, <code>git commit</code> y <code>git push</code>. Visual Studio Code actúa como una interfaz gráfica que simplifica el proceso, pero el funcionamiento interno es el mismo. </p>
 </div>
+<h2 id="4-mi-archivo-completo-mkdocsyml">4. Mi archivo completo mkdocs.yml</h2>
+<p>Os dejo como tengo configurado mi archivo mkdocs.yml de la web del Proyecto intermodular</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span>
+<span class="normal"><a href="#__codelineno-3-33">33</a></span>
+<span class="normal"><a href="#__codelineno-3-34">34</a></span>
+<span class="normal"><a href="#__codelineno-3-35">35</a></span>
+<span class="normal"><a href="#__codelineno-3-36">36</a></span>
+<span class="normal"><a href="#__codelineno-3-37">37</a></span>
+<span class="normal"><a href="#__codelineno-3-38">38</a></span>
+<span class="normal"><a href="#__codelineno-3-39">39</a></span>
+<span class="normal"><a href="#__codelineno-3-40">40</a></span>
+<span class="normal"><a href="#__codelineno-3-41">41</a></span>
+<span class="normal"><a href="#__codelineno-3-42">42</a></span>
+<span class="normal"><a href="#__codelineno-3-43">43</a></span>
+<span class="normal"><a href="#__codelineno-3-44">44</a></span>
+<span class="normal"><a href="#__codelineno-3-45">45</a></span>
+<span class="normal"><a href="#__codelineno-3-46">46</a></span>
+<span class="normal"><a href="#__codelineno-3-47">47</a></span>
+<span class="normal"><a href="#__codelineno-3-48">48</a></span>
+<span class="normal"><a href="#__codelineno-3-49">49</a></span>
+<span class="normal"><a href="#__codelineno-3-50">50</a></span>
+<span class="normal"><a href="#__codelineno-3-51">51</a></span>
+<span class="normal"><a href="#__codelineno-3-52">52</a></span>
+<span class="normal"><a href="#__codelineno-3-53">53</a></span>
+<span class="normal"><a href="#__codelineno-3-54">54</a></span>
+<span class="normal"><a href="#__codelineno-3-55">55</a></span>
+<span class="normal"><a href="#__codelineno-3-56">56</a></span>
+<span class="normal"><a href="#__codelineno-3-57">57</a></span>
+<span class="normal"><a href="#__codelineno-3-58">58</a></span>
+<span class="normal"><a href="#__codelineno-3-59">59</a></span>
+<span class="normal"><a href="#__codelineno-3-60">60</a></span>
+<span class="normal"><a href="#__codelineno-3-61">61</a></span>
+<span class="normal"><a href="#__codelineno-3-62">62</a></span>
+<span class="normal"><a href="#__codelineno-3-63">63</a></span>
+<span class="normal"><a href="#__codelineno-3-64">64</a></span>
+<span class="normal"><a href="#__codelineno-3-65">65</a></span>
+<span class="normal"><a href="#__codelineno-3-66">66</a></span>
+<span class="normal"><a href="#__codelineno-3-67">67</a></span>
+<span class="normal"><a href="#__codelineno-3-68">68</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Nom del lloc</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROYECTO INTERMODULAR</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># Carpeta amb el documents font</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;md&#39;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="c1"># Carpeta on es generarà el lloc web (mkdocs build)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="nt">site_dir</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;docs&#39;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="c1"># Adreça on s&#39;executa el server local (mkdocs serve)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="nt">dev_addr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost:4000</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1"># Navegació dels documents</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="nt">nav</span><span class="p">:</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Inicio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Markdown</span><span class="p">:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Introducción</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown/introduccion.md</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Editores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown/editores.md</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Sintaxis básica</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown/sintaxis.md</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Referencias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown/referencias.md</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">MkDocs</span><span class="p">:</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Introducción</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/introduccion.md</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Instalación</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/instalacion.md</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Configuración</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/configuracion.md</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Alojamiento en GitHub</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/github.md</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Referencias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/referencias.md</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27"></a>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28"></a><span class="c1"># Extenions</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md_in_html</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35"></a><span class="w">      </span><span class="nt">line_spans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">__span</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36"></a><span class="w">      </span><span class="nt">pygments_lang_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40"></a>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41"></a><span class="c1"># Tema a triar</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42"></a><span class="nt">theme</span><span class="p">:</span><span class="w"> </span>
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w">   </span><span class="c1"># selecció del tema - mkdocs o readthedocs / material (pip install mkdocs-material)</span>
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44"></a><span class="w">  </span><span class="nt">highlightjs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46"></a><span class="w">   </span><span class="c1"># Boto que canvia a mode oscur</span>
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-7</span><span class="w"> </span>
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to dark mode</span>
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51"></a><span class="w">    </span><span class="c1"># Botó que canvia a mode clar</span>
+</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slate</span>
+</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-4</span>
+</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to light mode</span>
+</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57"></a><span class="w">    </span><span class="c1"># utilitats de copia de codi</span>
+</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span><span class="w"> </span>
+</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.select</span>
+</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span>
+</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span><span class="w">    </span><span class="c1"># boto flotant de tornar a dalt </span>
+</span><span id="__span-3-62"><a id="__codelineno-3-62" name="__codelineno-3-62"></a>
+</span><span id="__span-3-63"><a id="__codelineno-3-63" name="__codelineno-3-63"></a><span class="nt">extra_css</span><span class="p">:</span>
+</span><span id="__span-3-64"><a id="__codelineno-3-64" name="__codelineno-3-64"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/extra.css</span>
+</span><span id="__span-3-65"><a id="__codelineno-3-65" name="__codelineno-3-65"></a>
+</span><span id="__span-3-66"><a id="__codelineno-3-66" name="__codelineno-3-66"></a><span class="c1"># Altres afegits</span>
+</span><span id="__span-3-67"><a id="__codelineno-3-67" name="__codelineno-3-67"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-3-68"><a id="__codelineno-3-68" name="__codelineno-3-68"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w">      </span><span class="c1"># plugin del quadre cerca</span>
+</span></code></pre></div></td></tr></table></div>
 
 
 

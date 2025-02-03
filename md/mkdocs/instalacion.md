@@ -50,7 +50,7 @@ Al crear un nuevo proyecto con MkDocs, verás que se ha generado una estructura 
 
 - El archivo **mkdocs.yml** es el archivo de configuración principal de todo el proyecto.
 - La carpeta **docs** contendrá los documentos en formato Markdown.
-- El archivo **index.md** es un archivo de muestra que se mostrará al acceder a la raíz del sitio web.
+    - El archivo **index.md** es un archivo de muestra que se mostrará al acceder a la raíz del sitio web.
 
 Como puedes observar, por un lado tendrás el contenido en formato Markdown y, por otro, la configuración de cómo se va a renderizar este contenido.
 
